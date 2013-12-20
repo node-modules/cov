@@ -4,12 +4,12 @@
   "description": "Mocha Coverage report store on CDN.",
   "main": "bin/cov",
   "scripts": {
-    "test": "make test-all",
-    "blanket": {
-      "pattern": "//^((?!(node_modules|test)).)*$/"
-    }
+    "test": "make test-all"
   },
   "config": {
+    "blanket": {
+      "pattern": "//^((?!(node_modules|test)).)*$/"
+    },
     "cov": {
       "threshold": 100
     }
