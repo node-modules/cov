@@ -1,0 +1,41 @@
+{
+  "name": "cov",
+  "version": "0.0.1",
+  "description": "Mocha Coverage report store on CDN.",
+  "main": "bin/cov",
+  "scripts": {
+    "test": "make test-all",
+    "blanket": {
+      "pattern": "//^((?!(node_modules|test)).)*$/"
+    }
+  },
+  "config": {
+    "cov": {
+      "threshold": 100
+    }
+  },
+  "dependencies": {
+    "qn": ">=0.2.0"
+  },
+  "bin": {
+    "cov": "./bin/cov"
+  },
+  "homepage": "https://github.com/fengmk2/cov",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fengmk2/cov.git",
+    "web": "https://github.com/fengmk2/cov"
+  },
+  "bugs": {
+    "url": "https://github.com/fengmk2/cov/issues",
+    "email": "fengmk2@gmail.com"
+  },
+  "keywords": [
+    "cov", "coverage", "jscoverage", "html-cov"
+  ],
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "author": "fengmk2 <fengmk2@gmail.com> (http://fengmk2.github.com)",
+  "license": "MIT"
+}
