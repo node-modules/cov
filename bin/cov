@@ -51,7 +51,7 @@ process.stdin.on('end', function () {
   // CODE COVERAGE RESULT WAS SAVED TO: http://xxx/xxx.html
   // CODE COVERAGE RESULT OF LINES IS: 157/164
 
-  var config = pkg.config.cov || pkg.config.coverage || pkg.config.alicov;
+  var config = pkg.config.cov || pkg.config.coverage || pkg.config.alicov || pkg.config['travis-cov'];
   var threshold = config.threshold;
   var pass = cov >= threshold;
 
@@ -64,12 +64,13 @@ process.stdin.on('end', function () {
   }
 
   var key = 'cov/html/' + pkg.name + '/' + pkg.version + '.html';
-
-  client.upload(new Buffer(content), {key: key}, function (err, info) {
-    if (err) {
-      throw err;
-    }
-    console.log('CODE COVERAGE RESULT WAS SAVED TO: %s', info.url);
-    process.exit(pass ? 0 : 1);
+  client.delete(key, function () {
+    client.upload(new Buffer(content), {key: key}, function (err, info) {
+      if (err) {
+        throw err;
+      }
+      console.log('CODE COVERAGE RESULT WAS SAVED TO: %s', info.url);
+      process.exit(pass ? 0 : 1);
+    });
   });
 });

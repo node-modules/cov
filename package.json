@@ -15,7 +15,10 @@
     }
   },
   "dependencies": {
-    "qn": ">=0.2.0"
+    "qn": "0.2.0"
+  },
+  "devDependencies": {
+    "contributors": "*"
   },
   "bin": {
     "cov": "./bin/cov"
