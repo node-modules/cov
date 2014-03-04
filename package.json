@@ -15,9 +15,11 @@
     }
   },
   "dependencies": {
+    "istanbul": "0.2.4",
     "qn": "0.2.0"
   },
   "devDependencies": {
+    "autod": "*",
     "contributors": "*"
   },
   "bin": {
