@@ -22,8 +22,11 @@ var client = qn.create({
   "bucket": "qtestbucket"
 });
 
-var config = pkg.config.cov || pkg.config.coverage || pkg.config.alicov || pkg.config['travis-cov'];
-var threshold = config.threshold;
+var threshold = 95;
+if (pkg.config) {
+  var config = pkg.config.cov || pkg.config.coverage || pkg.config.alicov || pkg.config['travis-cov'];
+  threshold = Number(config.threshold || config) || threshold;
+}
 
 var coverageDir = process.argv[2];
 

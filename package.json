@@ -1,15 +1,12 @@
 {
   "name": "cov",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Mocha Coverage report store on CDN.",
   "main": "bin/cov",
   "scripts": {
     "test": "make test-all"
   },
   "config": {
-    "blanket": {
-      "pattern": "//^((?!(node_modules|test)).)*$/"
-    },
     "cov": {
       "threshold": 100
     }
@@ -36,7 +33,8 @@
     "email": "fengmk2@gmail.com"
   },
   "keywords": [
-    "cov", "coverage", "jscoverage", "html-cov"
+    "cov", "coverage", "jscoverage", "html-cov", "istanbul",
+    "code coverage", "code-coverage", "cover"
   ],
   "engines": {
     "node": ">= 0.10.0"
