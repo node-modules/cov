@@ -1,6 +1,6 @@
 {
   "name": "cov",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Mocha Coverage report store on CDN.",
   "main": "bin/cov",
   "scripts": {
