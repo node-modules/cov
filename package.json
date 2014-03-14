@@ -12,12 +12,13 @@
     }
   },
   "dependencies": {
-    "istanbul": "0.2.4",
-    "qn": "0.2.0"
+    "istanbul": "0.2.6",
+    "qn": "0.2.1"
   },
   "devDependencies": {
     "autod": "*",
-    "contributors": "*"
+    "contributors": "*",
+    "jshint": "*"
   },
   "bin": {
     "cov": "./bin/cov"

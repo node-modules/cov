@@ -6,6 +6,9 @@ MOCHA_OPTS =
 install:
 	@npm install --registry=http://registry.cnpmjs.org --cache=${HOME}/.npm/.cache/cnpm
 
+jshint:
+	@./node_modules/.bin/jshint .
+
 test:
 	@NODE_ENV=test node --harmony \
 		node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha \
