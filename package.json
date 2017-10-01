@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "istanbul": "0.2.6",
-    "qn": "0.2.1"
+    "qn": "1.3.0"
   },
   "devDependencies": {
     "autod": "*",
@@ -34,8 +34,14 @@
     "email": "fengmk2@gmail.com"
   },
   "keywords": [
-    "cov", "coverage", "jscoverage", "html-cov", "istanbul",
-    "code coverage", "code-coverage", "cover"
+    "cov",
+    "coverage",
+    "jscoverage",
+    "html-cov",
+    "istanbul",
+    "code coverage",
+    "code-coverage",
+    "cover"
   ],
   "engines": {
     "node": ">= 0.10.0"
