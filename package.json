@@ -12,7 +12,7 @@
     }
   },
   "dependencies": {
-    "istanbul": "0.2.6",
+    "istanbul": "0.3.21",
     "qn": "0.2.1"
   },
   "devDependencies": {
